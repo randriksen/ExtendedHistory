@@ -39,7 +39,7 @@ function Get-ExtendedHistory {
         }
 
         # Output the command's index and the command itself
-        write-host ($i) "`t" $hist[$i]
+        write-host "$i`t$hist[$i]"
 
         # If a command is very long (over 200 characters), add separators for readability
         if ($hist[$i].length -gt 200) {
@@ -47,3 +47,4 @@ function Get-ExtendedHistory {
         }
     }
 }
+

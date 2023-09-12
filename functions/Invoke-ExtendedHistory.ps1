@@ -32,8 +32,7 @@ function Invoke-ExtendedHistory {
     $hist = Split-History
 
     # Retrieve the command at the specified index
-    $line = $hist[$i]
-
-    # Execute the command using Invoke-Expression
-    Invoke-Expression -Command $line
+    $ScriptBlock = [scriptblock]::Create($hist[$i])
+    write-host $ScriptBlock
+    invoke-command -ScriptBlock $ScriptBlock
 }
