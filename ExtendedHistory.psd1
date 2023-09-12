@@ -1,8 +1,8 @@
 @{
     ModuleVersion = '1.0'
     Author = 'Ole Rand-Hendriksen'
-    Description = 'A module for working with extended PowerShell command history.'
-    PowerShellVersion = '3.0'  # Supports PowerShell versions where Get-History is available
+    Description = 'A module for working with extended PowerShell command history. It lets you get history from previous sessions, get multi-line commands, and invoke them from history.'
+    PowerShellVersion = '3.0'  # Should support all PowerShell versions where Get-History is available
     FormatsToProcess = @()
     TypesToProcess = @()
     NestedModules = 'ExtendedHistory.psm1'
