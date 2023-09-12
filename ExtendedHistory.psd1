@@ -1,5 +1,3 @@
-# Module manifest (.psd1) for ExtendedHistory
-
 @{
     ModuleVersion = '1.0'
     Author = 'Ole Rand-Hendriksen'
@@ -7,7 +5,7 @@
     PowerShellVersion = '3.0'  # Supports PowerShell versions where Get-History is available
     FormatsToProcess = @()
     TypesToProcess = @()
-    NestedModules = @()
+    NestedModules = 'ExtendedHistory.psm1'
     FunctionsToExport =  @('Split-History', 'Get-ExtendedHistory', 'Invoke-ExtendedHistory')
     CmdletsToExport = @()
     VariablesToExport = @()
@@ -17,8 +15,7 @@
         PSData = @{
             Tags = @()
             ProjectUri = 'https://github.com/randriksen/ExtendedHistory'
+            LicenseUri = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
         }
     }
-    # Specify the GPL license
-    #LicenseUri = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
 }
